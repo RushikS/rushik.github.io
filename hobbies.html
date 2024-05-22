@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "hobbies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+<script src="hobbies.js"></script>
+    <title>Hobbies</title>
+</head>
+<body>
+    <div class = "nav">
+        <a href = "index.html">About Me</a>
+        <a href = "projects.html">Projects</a>
+        <a href = "hobbies.html"><span style = "color: #bc6c25">Hobbies</span></a>
+        <a href = "skills.html">Skills</a>
+        <div id = "mode_change_outer" >
+            <button onclick = "change_mode_function()" id = "mode_change_inner">
+    
+            </button>
+        </div>
+    </div>
+
+    <div class="circle_1">
+
+    </div>
+    <div class="circle_2">
+        
+    </div>
+    <div class="circle_3">
+    
+    </div>
+    <div class = "outer_container">
+        <button id = "back" onclick="previous_photo()">
+            <
+        </button>
+
+        <div class="container">
+            <h2 id = "hobby_name">
+                Cycling
+            </h2>
+            
+            <div class = "inner">
+                <img src = "cycling_image.jpg" id = "hobby_image">
+            </div>
+
+            <p id = "hobby_description">
+                I cycled very often with my friends. Going all the way from Parramatta to Olympic Park via Rydalmere. 
+            </p>
+        
+        </div>
+        
+        <button id = "next" onclick="next_photo()">
+            >
+        </button>
+    </div>
+    <div class = "socials">
+        <h2 id = "instruction"> 
+            Click to visit:
+            
+        </h2>
+        <a href = "https://www.linkedin.com/in/rushik-s-7b1324298" target="_blank">
+            <img src = "linkedin.png" class="social_image">
+        </a>
+        <a href = "#">
+            <img src="git_hub.png" class = "social_image">
+        </a>
+    </div>
+    <footer>
+        Copyright ©  2024 Rushik Sriramoju
+    </footer>
+</body>
+</html>

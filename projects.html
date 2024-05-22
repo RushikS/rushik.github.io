@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Projects
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="projects_style.css">
+        <script src = "projects_script.js"></script>
+    </head>
+    <body>
+        <div class = "nav">
+            <a href = "index.html">About Me</a>
+            <a href = "projects.html"><span style = "color: #bc6c25">Projects</span></a>
+            <a href = "hobbies.html">Hobbies</a>
+            <a href = "skills.html">Skills</a>
+            <div id = "mode_change_outer" >
+                <button onclick = "change_mode_function()" id = "mode_change_inner">
+        
+                </button>
+            </div>
+            
+        </div>
+        <div id = "container">
+        <div class = "project_1">
+            <div class = "content">
+                <h1>
+                    Recursify Learning
+                </h1>
+                <p>
+                    This was my project from my Software Design and Development Class. My aim was to develop an app that can be used by year 9 students to learn about graphing, basic measures of spread and also area and perimeter. The app contained a quiz section where they can answer questions to test their understanding. In addition, I also used the numpy library to graph trigonometric and parabolic equations entered by the user. This was a very fun project as I got to learn about Tkinter library of Python as well as numpy and pyplot.   
+                </p>
+                <p class="instruction">
+                    Click the arrows to scroll through project work!
+                </p>
+            </div>
+
+            <div class="image_slider_1">
+                <button id = "major_back" onclick = "major_back_function()">
+                    <
+                </button>
+
+                <img src = "main_page.png" id = "major_image">
+
+                <button id = "major_next" onclick = "major_next_function()">
+                    >
+                </button>
+            </div>
+
+        </div>
+
+        <div class = "project_2">
+            <div class = "content">
+                <h1>
+                    Arduino Robot
+                </h1>
+                <p>
+                    This was a project that I developed to make myself more familiar with Arduino coding. I was using Arduino C to develop a robot that could avoid obstacles, choose the path with the least number of obstacles when moving away and also follow a line. I found it amazing to see how various components have to be coded separately to make a bigger project work. Each Actuator and Sensor had to talk to each other and I felt that my code was bridging them. Detecting Obstacles with ultrasonic sensor was an amazing part of my project because it was my first time experiencing "applying theory into practice" moment. I knew how the ultrasonic sensor calculates the distance between the robot and its surroundings. However, using this knowledge to create an obstacle avoidance robot was awesome. I later added a Reflective Optical Sensor to detect black and white to make it into a line following robot. Seeing my code work really made the experience even more memorable. 
+                </p>
+                <p class="instruction">
+                    Click the arrows to scroll through project work!
+                </p>
+            </div>
+
+            <div class = "image_slider_2">
+                <button id = "robot_back" onclick = "robot_back_function()">
+                    <
+                </button>
+
+                <img src = "robot_both.png" id = "robot_image">
+
+                <button id = "robot_next" onclick = "robot_next_function()">
+                    >
+                </button>
+            </div>
+
+
+
+        </div>
+
+        <div class = "project_3">
+            <div class = "content">
+                <h1>
+                    Mini Project: Connect 4
+                </h1>
+                <p>
+                    I made a replica of the game Connect 4 to understand JavaScript more clearly. JavaScript is a super versatile language for web applications. I understood this after year 12 finished and I ended up driving myself to finish Linkedin Courses of JavaScript Essentials and even looked into React and MERN stack. I am hoping that DevSoc Training Program will give me insights into these frameworks.
+                </p>
+
+                <p class="instruction">
+                    Click the arrows to scroll through project work!
+                </p>
+                
+            </div>
+
+            <div class = "image_slider_3">
+                <button id = "mini_back"  onclick = "mini_back_function()">
+                    <
+                </button>
+
+                <img src = "connect_four.png" id = "mini_image">
+
+                <button id = "mini_next"  onclick = "mini_next_function()">
+                    >
+                </button>
+            </div>
+
+        </div>
+        
+        </div>
+        <div class = "socials">
+            <h2 id = "instruction"> 
+                Click to visit:
+                
+            </h2>
+            <a href = "https://www.linkedin.com/in/rushik-s-7b1324298" target="_blank" >
+                <img src = "linkedin.png" class="social_image">
+            </a>
+            <a href = "#">
+                <img src="git_hub.png" class = "social_image">
+            </a>
+        </div>
+        <footer>
+            Copyright ©  2024 Rushik Sriramoju
+        </footer>
+    </body>
+
+</html>

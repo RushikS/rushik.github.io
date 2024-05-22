@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arvo", serif;
+    color: white;
+    
+}
+
+
+.nav{
+    background: linear-gradient(90deg, #3a5a40, #588157);
+    padding: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+body {
+    background-color: #1D1F20;
+}
+a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #F0F7F4;
+    
+}
+
+.stats{
+    background-color: #1D1F20;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outer_HTML, .outer_CSS, .outer_JS, .outer_Python {
+    flex-grow: 1;
+    height: 30px;
+    background-color: white;
+    margin-right: 1%; 
+    border-radius: 25px;  
+    z-index: 2;
+}
+
+p {
+    z-index: 2;
+}
+
+h1 {
+    color: #bc6c25;
+}
+
+@keyframes loadHTML {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.inner_HTML {
+    animation-name: loadHTML;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    background-color: #3a5a40;
+    width: 75%;
+    height: 30px;
+    border-radius: 25px;
+}
+
+@keyframes loadCSS {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.inner_CSS {
+    animation-name: loadCSS;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    background-color: #3a5a40;
+    width: 55%;
+    height: 30px;
+    border-radius: 25px;
+}
+
+@keyframes loadJS {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.inner_JS {
+    animation-name: loadJS;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    background-color: #3a5a40;
+    width: 55%;
+    height: 30px;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+@keyframes loadPython {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+.inner_Python {
+    animation-name: loadPython;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    background-color: #3a5a40;
+    width: 55%;
+    height: 30px;
+    border-radius: 25px;
+}
+
+.stats_HTML, .stats_CSS, .stats_JS, .stats_Python {
+    justify-content: space-between;
+    margin: 1%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content {
+    /* width: 580px; */
+    flex: 1.5;
+    text-align: justify;
+    margin-right: 3%;
+    z-index: 2;
+}
+
+.circle_1, .circle_2, .circle_3 {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    animation: loadCircles;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in;
+    border-radius: 50%;
+    background-color: black;
+}
+
+@keyframes loadCircles {
+    0% {
+        transform: translateY(25%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.circle_1 {
+    top: 120px;
+    left: 40px;
+    background: radial-gradient(#40916c, #2d6a4f);
+}
+
+.circle_2 {
+    top: 420px;
+    left: 15px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(#52796f,#354f52);
+    z-index: 1;
+}
+
+.circle_3 {
+    top: 300px;
+    width: 100px;
+    height: 100px;
+    left: 1000px;
+    background: radial-gradient( #40916c, #2d6a4f );
+    z-index: 1;
+}
+
+.socials {
+    height: 200px;
+    background-color: #344e41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_image{
+    position: relative;
+    width: 100px;
+}
+
+
+#mode_change_outer {
+    background-color: black;
+    height: 30px;
+    width: 60px;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 2%;
+    right: 0;
+    padding: 2px;
+    display: flex;
+    align-content: center;
+}
+
+#mode_change_inner {
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    padding: 2%;
+    background-color: #344e41;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .circle_1, .circle_2, .circle_3 {
+        width: 0px;
+        height: 0px;   
+    }
+    
+    .item-1 {
+        align-content: flex-start;
+    }
+}
+
+@media (max-width: 650px) {
+   
+
+    #mode_change_outer {
+        background-color: black;
+        height: 30px;
+        width: 60px;
+        border-radius: 100px;
+        position: absolute;
+        top: 0.85%;
+        bottom: 0;
+        left: 1%;
+        right: 0;
+        padding: 2px;
+        
+        
+    }
+    
+    #mode_change_inner {
+        background-color: grey;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .stats_CSS, .stats_HTML, .stats_JS, .stats_Python {
+        flex-direction: column;
+    }
+
+    .outer_HTML, .outer_CSS, .outer_JS, .outer_Python {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+}
+
+a:hover{
+    color: #bc6c25;
+}
+
+#instruction {
+    margin-right: 25px;
+    color: white;
+}
