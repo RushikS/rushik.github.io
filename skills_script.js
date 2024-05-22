@@ -20,7 +20,7 @@ function change_mode_function() {
         document.getElementsByClassName("stats_JS")[0].style.backgroundColor = "#1D1F20";
         document.querySelector(".stats").style.backgroundColor = "#1D1F20";
         document.querySelector("body").style.backgroundColor = "#1D1F20";
-        document.querySelector(".socials")[0].style.backgroundColor = "#344e41";
+        document.querySelector(".socials").style.backgroundColor = "#344e41";
         document.querySelector("footer").style.backgroundColor = "#344e41";
 
        

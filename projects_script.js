@@ -120,7 +120,7 @@ function change_mode_function() {
         document.getElementById("mode_change_inner").style.transform = "translateX(0)";
         document.getElementById("mode_change_outer").style.backgroundColor = "black";
         
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 6; i++) {
             document.querySelectorAll("p")[i].style.color = "white";
         }
 
@@ -129,9 +129,14 @@ function change_mode_function() {
             document.querySelectorAll("button")[j].style.backgroundColor = "#1D1F20";
         }
 
+        for (let k = 0; k < 3; k++) {
+            document.getElementsByClassName("instruction")[k].style.color = "#bc6c25";
+        }
+
         document.getElementsByClassName("project_1")[0].style.backgroundColor = "#1D1F20";
         document.getElementsByClassName("project_2")[0].style.backgroundColor = "#1D1F20";
         document.getElementsByClassName("project_3")[0].style.backgroundColor = "#1D1F20";
+        
         document.querySelector(".socials").style.backgroundColor = "#344e41";
         document.querySelector("footer").style.backgroundColor = "#344e41";
 
@@ -163,14 +168,19 @@ function change_mode_function() {
         document.getElementById("mode_change_inner").style.transform = "translateX(30px)";
         document.getElementById("mode_change_outer").style.backgroundColor = "white";
         
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 6; i++) {
             document.querySelectorAll("p")[i].style.color = "black";
         }
+        
         for (let j = 1; j < 7; j++) {
             document.querySelectorAll("button")[j].style.color = "black";
             document.querySelectorAll("button")[j].style.backgroundColor = "whitesmoke";
         }
         
+        for (let k = 0; k < 3; k++) {
+            document.getElementsByClassName("instruction")[k].style.color = "#bc6c25";
+        }
+
         document.getElementsByClassName("project_1")[0].style.backgroundColor = "whitesmoke";
         document.getElementsByClassName("project_2")[0].style.backgroundColor = "whitesmoke";
         document.getElementsByClassName("project_3")[0].style.backgroundColor = "whitesmoke";
